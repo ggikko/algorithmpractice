@@ -3,7 +3,13 @@ package bubblesort;
 public class BubbleSort {
 
 	public static int[] sort(int[] is) {
-		// TODO Auto-generated method stub
+
+		if(is[0]>is[1]){
+			int temp = is[0];
+			is[0] = is[1];
+			is[1] = temp;
+			return is;
+		}
 		return is;
 	}
 
