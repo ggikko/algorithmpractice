@@ -2,15 +2,20 @@ package bubblesort;
 
 public class BubbleSort {
 
-	public static int[] sort(int[] is) {
+	public static int[] sort(int[] array) {
 
-		if(is[0]>is[1]){
-			int temp = is[0];
-			is[0] = is[1];
-			is[1] = temp;
-			return is;
+		boolean swapped = true;
+		while(swapped)
+		for (int i = 1; i < array.length; i++){
+			swapped = false;
+			if (array[i - 1] > array[i]) {
+				int temp = array[i];
+				array[i] = array[i - 1];
+				array[i - 1] = temp;
+				swapped = true;
+			}
 		}
-		return is;
+		return array;
 	}
 
 }
