@@ -1,2 +1,2 @@
 # algorithmpractice
-practice for many kind of algorithm
+practice for many kind of algorithm.
