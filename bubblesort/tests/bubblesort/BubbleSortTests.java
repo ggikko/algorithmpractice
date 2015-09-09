@@ -20,10 +20,10 @@ public class BubbleSortTests {
 
 	@Test
 	public void sortSortedList() {
-		checkBubbleSortedArrayReturnExpected(new int[]{0,1}, BubbleSort.sort(new int[]{0,1}));
+		checkBubbleSortedArrayReturnsExpected(new int[]{0,1}, BubbleSort.sort(new int[]{0,1}));
 	}
 
-	private void checkBubbleSortedArrayReturnExpected(int[] expectedArray, int[] inputArray) {
+	private void checkBubbleSortedArrayReturnsExpected(int[] expectedArray, int[] inputArray) {
 		assertArrayEquals(expectedArray, inputArray);
 	}
 	
